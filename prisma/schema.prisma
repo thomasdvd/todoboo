@@ -1,0 +1,28 @@
+// NOT PART OF ASSIGNMENT
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model list {
+  id    String @id
+  name  String
+  todos todo[]
+}
+
+model todo {
+  id     String @id
+  listId String
+  title  String
+
+  description String?
+  due         DateTime?
+  completed   Boolean?  @default(false)
+
+  list list? @relation(fields: [listId], references: [id])
+}

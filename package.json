@@ -1,0 +1,60 @@
+{
+  "name": "todoboo",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "thomasdvd"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preview": "next build && next start",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "vercel-build": "prisma generate && next build"
+  },
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@prisma/client": "^4.5.0",
+    "@tanstack/react-query": "^4.14.1",
+    "clsx": "^1.2.1",
+    "daisyui": "^2.38.0",
+    "dayjs": "^1.11.6",
+    "jotai": "^1.9.1",
+    "match-sorter": "^6.3.1",
+    "next": "^13.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.1",
+    "react-icons": "^4.6.0",
+    "react-textarea-autosize": "^8.3.4",
+    "tailwind-merge": "^1.7.0",
+    "tailwindcss-animate": "^1.0.5",
+    "uuid": "^9.0.0",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.7",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "@types/uuid": "^8.3.4",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.26.0",
+    "eslint-config-next": "^13.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-tailwindcss": "^3.6.2",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "prisma": "^4.5.0",
+    "tailwindcss": "^3.2.1",
+    "typescript": "4.8.4"
+  }
+}
